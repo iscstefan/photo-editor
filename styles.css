@@ -1,0 +1,93 @@
+body {
+    margin: 0px !important;
+    background-color: #fff3e0;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction:row;
+    background-color: #ffe0b2;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    height: 90vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff3e0;
+}
+
+.sidebar-chart {
+    height: 90vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff3e0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-item-effects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 2;
+
+}
+
+.sidebar-item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.view {
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff3e0;
+}
+
+.sidebar-effects-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#visibleCanvas {
+    background-color:#fff3e0;
+    max-width: 60vw;
+    max-height: 90vh;
+}
+
+#selectionCanvas {
+    max-width: 60vw;
+    max-height: 90vh;
+}
+
+button.btn {
+    font-size: 1em;
+    background-color: #ffa726;
+}
+
+.selection {
+    border: 2px solid black;
+    z-index: 1;
+}

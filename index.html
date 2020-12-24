@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classic layout</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="app.js"></script>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class=main>
+        <div class="header">
+
+            <button id="selectionButton" class="btn btn-warning" style="margin-bottom: 15px; margin-right: 10px;">
+                <i class="far fa-object-ungroup"></i>
+            </button>
+
+            <form>
+                <div class="form-group">
+                    <input id="fileBrowser" type="file" class="form-control-file">
+                </div>
+            </form>
+
+        </div>
+        <div class="sidebar">
+            <h4 style="padding-left: 60px; padding-top: 10px;">Effects</h5>
+            <div class="sidebar-item-effects">
+                <div>
+                    <button type="button" class="btn btn-warning btn-lg btn-block btn-sm">Demo </button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block btn-sm">Demo Effect</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block btn-sm">Demo Effect</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block btn-sm">Demo Effect</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block btn-sm">Demo Effect</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block btn-sm">Demo </button>
+                </div>
+            </div>
+            <div class="sidebar-item-text">
+                <form>
+                    <div class="form-group">
+                        <label for="input-text">Text</label>
+                        <input class="form-control" id="input-text" placeholder="Enter text">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-color">Color</label>
+                        <input class="form-control" id="input-color" placeholder="black, #ffffff">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-font">Font Size</label>
+                        <input class="form-control" id="input-font" placeholder="18">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-warning"
+                            style="margin-bottom: 10px;">Add Text</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="view">
+            <canvas id="visibleCanvas" style="z-index: 0; position: absolute;">
+                Not supported.
+            </canvas>
+            <canvas id="selectionCanvas" style="z-index: 1; position: absolute; display: none;">
+                Not supported.
+            </canvas>
+        </div>
+        <div class="sidebar-chart">chart</div>
+
+        <script>
+            "use strict";
+
+            app.load();
+        </script>
+    </div>
+</body>
+
+</html>
